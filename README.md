@@ -23,7 +23,21 @@
 
 -----------------------------------------------------------------------
 ## Overview
-Some words about the project here-
+Audio distortion is an intentional modification of an audio signal to alter its waveform, introducing non-linearities and harmonic content that was not present in the original signal. Distortion can be applied for various artistic, creative, or practical reasons in music production, sound design, and audio processing.
+
+### Types of Audio Distortion
+
+#### Clipping Distortion 
+Clipping distortion occurs when the amplitude of a signal exceeds the maximum allowed value, causing the waveform to "clip" or get cut off at a certain level. Introduces harmonics, resulting in a more aggressive, gritty sound. It's normally used in guitar distortion pedals, rock music, and some electronic music genres.
+
+#### Waveshaping Distortion
+Waveshaping involves modifying the shape of the audio waveform using non-linear functions. Can produce a wide range of tonal variations, from subtle warmth to extreme fuzziness. Mostly used in various musical genres for creative sound shaping and experimentation.
+
+#### Saturation Distortion
+Saturation is a form of distortion that simulates the characteristics of analog saturation, where the signal is driven into the nonlinear region of a device. Adds harmonics, compression, and a warm, vintage feel to the sound. You'll normally see it applied to commonly applied to vocals, drums, and entire mixes in both music production and audio mastering.
+
+#### Modulation Distortion:
+Modulation distortion involves the use of modulation effects, such as ring modulation or frequency modulation, to alter the frequency content of the audio signal. It can produce metallic, robotic, or frequency-shifted sounds. It's also often used in experimental music, electronic genres, and sound design.
 
 ### Clipping
 
@@ -33,6 +47,11 @@ Some words about the project here-
 ### Hard Clip vs Soft Clip
 
 ![image](https://github.com/JDSherbert/Audio-Soft-Clip-Distortion/assets/43964243/b16984dc-806c-4939-864e-a320b489be88)
+
+
+The distortion effect implemented in the provided C++ code is a basic form of soft clipping. Soft clipping is a non-linear process that rounds off the peaks of a waveform smoothly, resulting in a more gradual distortion compared to hard clipping.
+
+In the code, the tanh function is used to apply soft clipping to each audio sample in the buffer. The tanh function produces a smooth, sigmoidal curve, which introduces a gentle distortion when applied to the audio signal. This type of distortion is often used in audio effects to create warm, saturated tones or simulate the characteristics of analog equipment.
 
 
 
