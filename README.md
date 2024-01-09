@@ -1,4 +1,4 @@
-![image](https://github.com/JDSherbert/Audio-Soft-Clip-Distortion/assets/43964243/ad11da11-a31c-4a9c-aa18-78d51392f637)
+![image](https://github.com/JDSherbert/Audio-Soft-Clip-Distortion/assets/43964243/73ee52dc-d94a-47aa-882f-05fbca96f46d)
 
 # Audio: Soft Clip Distortion
 
