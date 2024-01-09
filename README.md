@@ -29,6 +29,8 @@ The distortion effect implemented in this code is a basic form of soft clipping.
 
 In the code, the `tanh` function is used to apply soft clipping to each audio sample in the buffer. The `tanh` function produces a smooth, sigmoidal curve, which introduces a gentle distortion when applied to the audio signal. This type of distortion is often used in audio effects to create warm, saturated tones or simulate the characteristics of analog equipment.
 
+This is also the technique I have used in my own product, the [Sherbert Clipper VST Effect](https://jdsherbert.itch.io/sherbert-clipper)
+
 ## Clipping
 
 ![image](https://github.com/JDSherbert/Audio-Soft-Clip-Distortion/assets/43964243/977b31c0-0aca-4114-a84d-8b31591b484f)
