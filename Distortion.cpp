@@ -1,6 +1,6 @@
 // ©2024 JDSherbert. All Rights Reserved.
 
-#include "distortion.h"
+#include "Distortion.h"
 
 Distortion::Distortion(double amount) 
 : distortionAmount(amount) 
