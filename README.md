@@ -23,9 +23,15 @@
 
 -----------------------------------------------------------------------
 ## Overview
-Audio distortion is an intentional modification of an audio signal to alter its waveform, introducing non-linearities and harmonic content that was not present in the original signal. Distortion can be applied for various artistic, creative, or practical reasons in music production, sound design, and audio processing.
+Audio distortion is an intentional modification of an audio signal to alter its waveform, introducing non-linearities and harmonic content that was not present in the original signal. Distortion can be applied for various artistic, creative, or practical reasons in music production, sound design, and audio processing. It's a versatile and powerful tool in music production and sound design. Whether applied to individual instruments, vocals, or entire mixes, distortion can shape the character and emotion of a sound. Musicians and producers leverage distortion's creative potential to craft unique and memorable sonic experiences in a wide range of musical genres.
 
-### Types of Audio Distortion
+The distortion effect implemented in this code is a basic form of soft clipping. Soft clipping is a non-linear process that rounds off the peaks of a waveform smoothly, resulting in a more gradual distortion compared to hard clipping.
+
+In the code, the `tanh` function is used to apply soft clipping to each audio sample in the buffer. The `tanh` function produces a smooth, sigmoidal curve, which introduces a gentle distortion when applied to the audio signal. This type of distortion is often used in audio effects to create warm, saturated tones or simulate the characteristics of analog equipment.
+
+## Clipping
+
+![image](https://github.com/JDSherbert/Audio-Soft-Clip-Distortion/assets/43964243/977b31c0-0aca-4114-a84d-8b31591b484f)
 
 #### Clipping Distortion 
 Clipping distortion occurs when the amplitude of a signal exceeds the maximum allowed value, causing the waveform to "clip" or get cut off at a certain level. Introduces harmonics, resulting in a more aggressive, gritty sound. It's normally used in guitar distortion pedals, rock music, and some electronic music genres.
@@ -39,21 +45,25 @@ Saturation is a form of distortion that simulates the characteristics of analog 
 #### Modulation Distortion:
 Modulation distortion involves the use of modulation effects, such as ring modulation or frequency modulation, to alter the frequency content of the audio signal. It can produce metallic, robotic, or frequency-shifted sounds. It's also often used in experimental music, electronic genres, and sound design.
 
-### Clipping
-
-![image](https://github.com/JDSherbert/Audio-Soft-Clip-Distortion/assets/43964243/977b31c0-0aca-4114-a84d-8b31591b484f)
-
 
 ### Hard Clip vs Soft Clip
 
 ![image](https://github.com/JDSherbert/Audio-Soft-Clip-Distortion/assets/43964243/b16984dc-806c-4939-864e-a320b489be88)
 
 
-The distortion effect implemented in the provided C++ code is a basic form of soft clipping. Soft clipping is a non-linear process that rounds off the peaks of a waveform smoothly, resulting in a more gradual distortion compared to hard clipping.
+## Challenges and Considerations in Distortion
 
-In the code, the tanh function is used to apply soft clipping to each audio sample in the buffer. The tanh function produces a smooth, sigmoidal curve, which introduces a gentle distortion when applied to the audio signal. This type of distortion is often used in audio effects to create warm, saturated tones or simulate the characteristics of analog equipment.
+### Dynamic Range Compression
+Distortion often reduces the dynamic range of a signal, making the quieter parts louder and the louder parts quieter. This compression effect can impact the overall balance and perceived loudness.
 
+### Harmonic Content
+Different distortion types introduce distinct harmonic spectra. Understanding and controlling the harmonic content is crucial for achieving the desired tonal characteristics.
 
+### Artistic Expression
+Distortion is not merely a technical process; it's a tool for artistic expression. Musicians and producers use distortion intentionally to convey emotion, energy, and creativity in their music.
+
+### Context and Genre
+The appropriateness of distortion depends on the musical context and genre. While heavy distortion may be suitable for rock or metal, subtle saturation might be more appropriate for jazz or acoustic music.
 
 -----------------------------------------------------------------------
 
